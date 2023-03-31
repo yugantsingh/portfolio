@@ -266,7 +266,7 @@ article.active {
 
 .has-scrollbar::-webkit-scrollbar {
   width: 5px; /* for vertical scrollbar */
-  height: 5px; /* for horizontal scrollbar */
+  height: 8px; /* for horizontal scrollbar */
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
@@ -771,7 +771,6 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 15px;
   margin: 0 -15px;
   padding: 25px;
   padding-bottom: 25px;
@@ -788,15 +787,14 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
-  filter: grayscale(1);
+  width: 50%;
+  filter: grayscale(0.8);
   transition: var(--transition-1);
 }
 
 .clients-item img:hover {
   filter: grayscale(0);
 }
-
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
@@ -1582,7 +1580,7 @@ textarea.form-input::-webkit-resizer {
   /* clients */
 
   .clients-list {
-    gap: 50px;
+    gap: 10px;
     margin: 0 -30px;
     padding: 45px;
     scroll-padding-inline: 45px;
@@ -2013,4 +2011,28 @@ textarea.form-input::-webkit-resizer {
   .timeline-text {
     max-width: 700px;
   }
+}
+
+#photoid {
+  background-color: hsl(240, 2%, 12%);
+}
+
+#resume {
+  font-size: var(--fs-8);
+  max-width: fit-content;
+  border: 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 5px 30px;
+  border-radius: 30px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: hsl(45, 54%, 58%);
+  border: 0.5px solid hsl(0, 0%, 0%);
+  color: #000;
+}
+#resume:hover {
+  background-color: hsl(51, 100%, 69%);
+  color: #000;
 }
