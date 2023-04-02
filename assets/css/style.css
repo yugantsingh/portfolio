@@ -211,6 +211,9 @@ article {
 .icon-stack {
   color: #38ada9;
 }
+.icon-timeline {
+  color: #eccc68;
+}
 /*  */
 
 .icon-box::before {
@@ -505,6 +508,7 @@ main {
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+  gap: 20px;
 }
 
 .navbar-link {
@@ -520,7 +524,9 @@ main {
 }
 
 .navbar-link.active {
+  transition: 0.25s ease-in-out;
   color: #fdcb6e;
+  border-bottom: 2px solid #fdcb6e;
 }
 
 /*-----------------------------------*\
@@ -912,11 +918,11 @@ main {
   line-height: 1.6;
 }
 /*  */
-.timeline-education {
-  color: #ff5252;
-  border-bottom: 2px solid #ff5252;
+.timeline-new {
+  color: #eccc68;
+  border-bottom: 2px solid #eccc68;
 }
-.timeline-exp {
+/* .timeline-exp {
   color: #7bed9f;
   border-bottom: 2px solid #7bed9f;
 }
@@ -927,7 +933,7 @@ main {
 .timeline-stack {
   color: #38ada9;
   border-bottom: 2px solid #38ada9;
-}
+} */
 /*  */
 
 /**
@@ -1066,13 +1072,15 @@ main {
   margin-top: 5px;
 }
 .project-options a {
+  text-align: center;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  width: 30%;
   color: white;
-  padding: 2px 8px;
+  padding: 4px 8px;
   border-radius: 30px;
-  font-size: var(--fs-6);
+  font-size: 1rem;
   font-weight: 100;
 }
 .project-about {
@@ -2330,4 +2338,8 @@ textarea.form-input::-webkit-resizer {
   margin-left: 10px;
   font-size: var(--fs-5);
   font-weight: 100;
+}
+.project-stack-list ion-icon {
+  display: inline-block;
+  color: #45aaf2;
 }
