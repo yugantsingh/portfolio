@@ -468,7 +468,7 @@ main {
 
 .social-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 15px;
   padding-bottom: 4px;
@@ -513,7 +513,7 @@ main {
 
 .navbar-link {
   color: var(--light-gray);
-  font-size: var(--fs-8);
+  font-size: 1rem;
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
@@ -1108,21 +1108,21 @@ main {
 #project-github {
   background-color: #3d3d3d;
   border-bottom: 2px solid #5d5d5d;
-  color: #ff4d4d;
+  color: #74b9ff;
 }
 #project-github:hover {
   transition: 0.3s ease-in-out;
-  background-color: #ff4d4d;
+  background-color: #74b9ff;
   color: #000;
 }
 #project-deploy {
   background-color: #3d3d3d;
   border-bottom: 2px solid #5d5d5d;
-  color: #ff9f1a;
+  color: #ff7675;
 }
 #project-deploy:hover {
   transition: 0.3s ease-in-out;
-  background-color: #ff9f1a;
+  background-color: #ff7675;
   color: #000;
 }
 /*  */
@@ -2358,7 +2358,7 @@ textarea.form-input::-webkit-resizer {
 .navlink-project a {
   padding: 5px 15px;
   color: #fff;
-  border-bottom: 2px solid #5d5d5d;
+  /* border-bottom: 2px solid #5d5d5d; */
   border-radius: 30px;
 }
 .navlink-project a:hover {
@@ -2380,10 +2380,12 @@ textarea.form-input::-webkit-resizer {
   background-color: #32ff7e;
 }
 .navlink-home {
-  background-color: #ff9f1a;
+  /* border-bottom: 2px solid #5d5d5d; */
+  border-radius: 0px;
+  background-color: hsl(240, 2%, 12%);
 }
 .navlink-home a:hover {
-  background-color: #32ff7e;
+  color: var(--vegas-gold);
 }
 .navbar-project {
   background-color: hsl(240, 2%, 12%);
