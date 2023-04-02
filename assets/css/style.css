@@ -2343,3 +2343,52 @@ textarea.form-input::-webkit-resizer {
   display: inline-block;
   color: #45aaf2;
 }
+
+/* Project Custom Nav */
+.navlink-project {
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin: 25px 0px;
+  font-size: 1rem;
+  font-weight: 100;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.navlink-project a {
+  padding: 5px 15px;
+  color: #fff;
+  border-bottom: 2px solid #5d5d5d;
+  border-radius: 30px;
+}
+.navlink-project a:hover {
+  width: auto;
+  transition: 0.3s ease-in-out;
+  color: #000;
+}
+.navlink-live {
+  background-color: #ff7675;
+}
+.navlink-github {
+  background-color: #74b9ff;
+}
+.navlink-live a:hover {
+  background-color: #32ff7e;
+  color: #000;
+}
+.navlink-github a:hover {
+  background-color: #32ff7e;
+}
+.navlink-home {
+  background-color: #ff9f1a;
+}
+.navlink-home a:hover {
+  background-color: #32ff7e;
+}
+.navbar-project {
+  background-color: hsl(240, 2%, 12%);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+/*  */
